@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 # Set desired versions
 ENV HAULER_VERSION="1.1.1"
-curl -sfL https://get.hauler.dev | bash
+RUN curl -sfL https://get.hauler.dev | bash
 
 # Verify installation
 RUN hauler version
