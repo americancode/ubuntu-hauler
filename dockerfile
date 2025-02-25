@@ -13,7 +13,7 @@ RUN apt-get update && \
     cifs-utils
 
 # Set desired versions
-ENV HAULER_VERSION="1.1.1"
+ENV HAULER_VERSION="1.2.1"
 RUN curl -sfL https://get.hauler.dev | bash
 
 # Verify installation
