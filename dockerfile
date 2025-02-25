@@ -9,10 +9,11 @@ RUN apt-get update && \
     gnupg \
     lsb-release \
     unzip \
-    git
+    git \
+    cifs-utils
 
 # Set desired versions
-ENV HAULER_VERSION="1.2.1"
+ENV HAULER_VERSION="1.1.1"
 RUN curl -sfL https://get.hauler.dev | bash
 
 # Verify installation
